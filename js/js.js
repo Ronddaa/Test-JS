@@ -1,11 +1,13 @@
-let productName = "Droid";
-let pricePerItem = 2000;
+function add(a, b, c) {
+  // Change code below this line
 
 
 
+  // Change code above this line
+}
 
+add(2, 5, 8); // 15
 
-
-
-
-console.log(pricePerItem);
+console.log(add(15, 27, 10));
+console.log(add(10, 20, 30));
+console.log(add(5, 10, 15));
