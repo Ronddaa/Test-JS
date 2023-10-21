@@ -1,13 +1,8 @@
-function add(a, b, c) {
+function isValidPassword(password) {
+  const SAVED_PASSWORD = 'jqueryismyjam';
   // Change code below this line
-
-
+  const isMatch = SAVED_PASSWORD === 'jqueryismyjam';
 
   // Change code above this line
+  return isMatch;
 }
-
-add(2, 5, 8); // 15
-
-console.log(add(15, 27, 10));
-console.log(add(10, 20, 30));
-console.log(add(5, 10, 15));
