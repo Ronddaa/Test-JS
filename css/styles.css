@@ -19,6 +19,9 @@ body {
     background-color: #ffffff;
     line-height: 1.5;
 }
+.icon-arrow{
+    fill: #f44336;
+}
 
 main {
     flex-grow: 1;
