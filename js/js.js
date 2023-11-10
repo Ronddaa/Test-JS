@@ -1,23 +1,14 @@
-function getFileName(file) {
-  const toSlice = file.indexOf('.');
-  let message;
-  
-
-  if (toSlice !== -1) {
-    message = file.slice(0, toSlice);
-  } else {
-    message = file;
-  }
-
-  return message;
+function findNumber(start, end, divisor) {
+    let total = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % divisor === 0) {
+            total += i;
+        }
+    }
+    return total;
 }
 
-
-console.log(getFileName("styles.css"));
-console.log(getFileName("app.js"));
-console.log(getFileName("app"));
-console.log(getFileName("index.js"));
-console.log(getFileName("index.html"));
-console.log(getFileName("index.css"));
-console.log(getFileName("index"));
-
+console.log(findNumber(8, 17, 3));
+console.log(findNumber(16, 35, 7));
+console.log(findNumber(2, 6, 5));
+console.log(findNumber(6, 9, 4));
