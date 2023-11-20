@@ -1,3 +1,10 @@
+function totalMoney(totalLong, totalOrder, totalHour) {
+  let sum = totalHour * 20 + totalLong * 0.6 + totalOrder * 2;
+  console.log(sum);
+}
+console.log(totalMoney(217, 30, 13.5));
+
+
 function getSlice(array, value) {
     let arr = array.indexOf(value);
     let message;
@@ -206,4 +213,32 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
 
 // Модуль 4 Объекты
+
+
+// Автопроверка 1 Объекты
+
+let apartment = {
+  imgUrl: 'https://via.placeholder.com/640x480',
+  descr : "Spacious apartment in the city center",
+  rating : 4,
+  price : 2153,
+  tags : ["premium", "promoted", "top"],
+}
+
+
+
+// Автопроверка 2 Объекты
+
+let apartment2 = { // В названии переменной не должно быть двойки
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner : {
+    name : 'Henry',
+    phone : '982-126-1588',
+    email : 'henry.carter@aptmail.com',
+  }
+};
 
