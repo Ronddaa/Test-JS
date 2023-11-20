@@ -1,10 +1,3 @@
-function totalMoney(totalLong, totalOrder, totalHour) {
-  let sum = totalHour * 20 + totalLong * 0.6 + totalOrder * 2;
-  console.log(sum);
-}
-console.log(totalMoney(217, 30, 13.5));
-
-
 function getSlice(array, value) {
     let arr = array.indexOf(value);
     let message;
@@ -241,4 +234,42 @@ let apartment2 = { // В названии переменной не должно
     email : 'henry.carter@aptmail.com',
   }
 };
+
+// Автопроверка 3 Объекты
+
+let apartment3 = {  // В названии переменной не должно быть тройки
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
+
+const aptRating = apartment.rating;
+const aptDescr = apartment.descr;
+const aptPrice = apartment.price;
+const aptTags = apartment.tags;
+
+
+// Автопроверка 4 Объекты
+
+const apartment4 = { // В названии переменной не должно быть четверки
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner: {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+const ownerName = apartment.owner.name;
+const ownerPhone = apartment.owner.phone;
+const ownerEmail = apartment.owner.email;
+const numberOfTags = apartment.tags.length;
+const firstTag = apartment.tags[0];
+const lastTag = apartment.tags[2];
 
