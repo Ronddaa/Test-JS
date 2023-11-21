@@ -245,10 +245,10 @@ let apartment3 = {  // В названии переменной не должн�
   tags: ["premium", "promoted", "top"],
 };
 
-const aptRating = apartment.rating;
-const aptDescr = apartment.descr;
-const aptPrice = apartment.price;
-const aptTags = apartment.tags;
+let aptRating3 = apartment.rating;
+let aptDescr3 = apartment.descr;
+let aptPrice3 = apartment.price;
+let aptTags3 = apartment.tags;
 
 
 // Автопроверка 4 Объекты
@@ -272,4 +272,92 @@ const ownerEmail = apartment.owner.email;
 const numberOfTags = apartment.tags.length;
 const firstTag = apartment.tags[0];
 const lastTag = apartment.tags[2];
+
+
+// Автопроверка 5 Объекты
+
+const apartment5 = { // В названии ВСЕХ переменных не должно быть пятерки
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
+
+let aptRating5 = apartment.rating;
+let aptDescr5 = apartment.descr;
+let aptPrice5 = apartment.price;
+let aptTags5 = apartment.tags;
+
+
+// Автопроверка 6 Объекты
+
+const apartment6 = { // В названии переменной не должно быть шестерки
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner: {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+apartment.price = 5000;
+apartment.rating = 4.7;
+apartment.owner.name = 'Henry Sibola';
+apartment.tags.push('trusted');
+
+// Автопроверка 6 Объекты
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4.7,
+  price: 5000,
+  tags: ["premium", "promoted", "top", "trusted"],
+  owner: {
+    name: "Henry Sibola",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+apartment.area = 60;
+apartment.rooms = 3;
+apartment.location = {};
+apartment.location.country = 'Jamaica';
+apartment.location.city = 'Kingston';
+
+
+// Автопроверка 7 Объекты
+
+const name = "Repair Droid";
+const price = 2500;
+const image = "https://via.placeholder.com/640x480";
+const tags = ["on sale", "trending", "best buy"];
+
+const product = {
+  name,
+  price,
+  image,
+  tags,
+};
+
+// Автопроверка 8 Объекты
+
+const emailInputName = "email";
+const passwordInputName = "password";
+
+const credentials = {
+  [emailInputName]: "henry.carter@aptmail.com",
+  [passwordInputName]: "jqueryismyjam"
+};
+
+
+// Модуль 4 Перебор объекта
+
+// Автопроверка 1 Перебор объекта
 
