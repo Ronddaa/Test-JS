@@ -361,3 +361,15 @@ const credentials = {
 
 // Автопроверка 1 Перебор объекта
 
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+
+const keys = [];
+const values = [];
+
+for (keys in apartment){
+  console.log(keys, apartment[keys])
+}
