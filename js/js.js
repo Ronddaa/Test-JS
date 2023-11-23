@@ -253,7 +253,7 @@ let aptTags3 = apartment.tags;
 
 // Автопроверка 4 Объекты
 
-const apartment4 = { // В названии переменной не должно быть четверки
+let apartment4 = { // В названии переменной не должно быть четверки
   imgUrl: "https://via.placeholder.com/640x480",
   descr: "Spacious apartment in the city center",
   rating: 4,
@@ -266,17 +266,17 @@ const apartment4 = { // В названии переменной не должн
   },
 };
 
-const ownerName = apartment.owner.name;
-const ownerPhone = apartment.owner.phone;
-const ownerEmail = apartment.owner.email;
-const numberOfTags = apartment.tags.length;
-const firstTag = apartment.tags[0];
-const lastTag = apartment.tags[2];
+let ownerName = apartment.owner.name;
+let ownerPhone = apartment.owner.phone;
+let ownerEmail = apartment.owner.email;
+let numberOfTags = apartment.tags.length;
+let firstTag = apartment.tags[0];
+let lastTag = apartment.tags[2];
 
 
 // Автопроверка 5 Объекты
 
-const apartment5 = { // В названии ВСЕХ переменных не должно быть пятерки
+let apartment5 = { // В названии ВСЕХ переменных не должно быть пятерки
   imgUrl: "https://via.placeholder.com/640x480",
   descr: "Spacious apartment in the city center",
   rating: 4,
@@ -292,7 +292,7 @@ let aptTags5 = apartment.tags;
 
 // Автопроверка 6 Объекты
 
-const apartment6 = { // В названии переменной не должно быть шестерки
+let apartment6 = { // В названии переменной не должно быть шестерки
   imgUrl: "https://via.placeholder.com/640x480",
   descr: "Spacious apartment in the city center",
   rating: 4,
@@ -312,7 +312,7 @@ apartment.tags.push('trusted');
 
 // Автопроверка 6 Объекты
 
-const apartment = {
+let apartment = {
   imgUrl: "https://via.placeholder.com/640x480",
   descr: "Spacious apartment in the city center",
   rating: 4.7,
@@ -334,12 +334,12 @@ apartment.location.city = 'Kingston';
 
 // Автопроверка 7 Объекты
 
-const name = "Repair Droid";
-const price = 2500;
-const image = "https://via.placeholder.com/640x480";
-const tags = ["on sale", "trending", "best buy"];
+let name = "Repair Droid";
+let price = 2500;
+let image = "https://via.placeholder.com/640x480";
+let tags = ["on sale", "trending", "best buy"];
 
-const product = {
+let product = {
   name,
   price,
   image,
@@ -348,10 +348,10 @@ const product = {
 
 // Автопроверка 8 Объекты
 
-const emailInputName = "email";
-const passwordInputName = "password";
+let emailInputName = "email";
+let passwordInputName = "password";
 
-const credentials = {
+let credentials = {
   [emailInputName]: "henry.carter@aptmail.com",
   [passwordInputName]: "jqueryismyjam"
 };
@@ -361,15 +361,17 @@ const credentials = {
 
 // Автопроверка 1 Перебор объекта
 
-const apartment = {
+let apartment = {
   descr: "Spacious apartment in the city center",
   rating: 4,
   price: 2153,
 };
 
-const keys = [];
-const values = [];
+let keys = [];
+let values = [];
 
-for (keys in apartment){
-  console.log(keys, apartment[keys])
+for (let key in apartment) {
+  keys.push(key);
+  values.push(apartment[key]);
 }
+
