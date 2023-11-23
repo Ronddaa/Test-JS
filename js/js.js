@@ -375,3 +375,40 @@ for (let key in apartment) {
   values.push(apartment[key]);
 }
 
+// Автопроверка 2 Перебор Объекта
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+let values = [];
+let keys = Object.keys(apartment);
+
+for (let key of keys){
+  console.log(key);
+  values.push(apartment[key]);
+}
+
+// Автопроверка 3 Перебор Объекта
+
+function countProps(object) {
+  let propCount = 0;
+  let keys = Object.keys(object);
+  let values = [];
+
+  for (let key of keys) [
+    values.push(object[key]),
+
+    propCount += 1,
+  ]
+
+  return propCount;
+}
+
+console.log(countProps({}));
+console.log(countProps({name: "Mango", age: 2}));
+console.log(countProps({mail: "poly@mail.com", isOnline: true, score: 500}));
+
+// Автопроверка 4 Перебор Объекта
+
