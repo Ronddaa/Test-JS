@@ -412,3 +412,30 @@ console.log(countProps({mail: "poly@mail.com", isOnline: true, score: 500}));
 
 // Автопроверка 4 Перебор Объекта
 
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);
+
+
+// Автопроверка 5 Перебор Объекта
+
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  const obekt = Object.values(salaries);
+let lobekt = obekt.length;
+
+for (let i = 0; i < lobekt; i++){
+  totalSalary += obekt[i];
+}
+  return totalSalary;
+}
+
+
+// Модуль 4 Масив Объекта
+
+// Автопроверка 1 Масив Объекта
